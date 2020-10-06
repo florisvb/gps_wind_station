@@ -158,6 +158,8 @@ For our wind stations, these are the default settings that each sensor should be
 
 ### Scripting the default settings
 
-There is a config file (turns hardware flow control off, that's it) and a script to set the default settings and calibrate (although I'm not convinced the calibration is doing anything). Run the following from this home directory (may need to change device number).
+There is a config file (turns hardware flow control off, that's it) and a script to set the default settings. 
+Run the following from this home directory (may need to change device number). Generally seems like you need to run it two or three times before it takes.
+Run the calibration seperately. 
 
 `minicom defaults/minirc.trisonica.cfg -D /dev/tty.usbserial-D307LICF -S defaults/trisonica_wind_station_settings.txt`
