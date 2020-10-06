@@ -147,11 +147,17 @@ For our wind stations, these are the default settings that each sensor should be
 7. `show V`
 8. `show W`
 9. `show T`
-10. `show RH`
-11. `show AD`
+10. `show H`
+11. `show Density`
 12. `show Heading`
 13. `show LevelX`
 14. `show LevelY`
 15. `show LevelZ` 
 16. `nvwrite`
 17. Run all calibrations
+
+### Scripting the default settings
+
+There is a config file (turns hardware flow control off, that's it) and a script to set the default settings and calibrate (although I'm not convinced the calibration is doing anything). Run the following from this home directory (may need to change device number).
+
+`minicom defaults/minirc.trisonica.cfg -D /dev/tty.usbserial-D307LICF -S defaults/trisonica_wind_station_settings.txt`
