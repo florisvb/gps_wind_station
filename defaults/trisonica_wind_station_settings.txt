@@ -13,8 +13,4 @@ send "show LevelX"
 send "show LevelY"
 send "show LevelZ"
 send "nvwrite"
-send "levelcalibrate YES"
-send "nvwrite"
-send "calibrate 72 44"
-
 
