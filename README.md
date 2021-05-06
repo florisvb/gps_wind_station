@@ -13,6 +13,10 @@ Components for the full system:
 * Battery: 2-Pack Miady 10000mAh Dual USB Portable Charger
 * SD card: SanDisk Ultra SDSQUNS-016G-GN3MN 16GB UHS-I Class 10 microSDHC
 
+# Reading the data
+
+After collecting data with the teensy onto the SD card, there will be a numbered folder on the SD card for each time you turned on the system (i.e. plugged in the teensy). That folder will contain a bunch of binary data files. See `example_20201006/0000001` for an example. To read and preprocess the binary files, see the following notebook for an example: `example_20201006/process_windgps_data_notebook.ipynb`.
+
 # Setting Trisonica settings via command line
 
 The trisonica supports a simple command line interface using the following serial commands.
